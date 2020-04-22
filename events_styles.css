@@ -1,0 +1,92 @@
+/*Kanza's custom styles for body - override most Bootstrap defaults*/
+body {
+  font: 1rem "Merriweather Sans", Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+.jumbotron {
+	text-align: center;		
+	background-image: url("images/jumbotron-bg.png");
+	background-size: cover;
+	background-position: center;
+	font-family: "Merriweather", serif;
+	font-weight: bold;
+	color: white;
+}
+
+/*Because why not*/
+.jumbotron h1, .lead {
+	text-shadow: 0px 4px 3px rgb(0,0,0,0.4),
+				 0px 8px 13px rgb(0,0,0,0.1),
+				 0px 18px 23px rgb(0,0,0,0.1);
+}
+
+/*Custom style from https://css-tricks.com/examples/hrs/*/
+/*Because why not*/
+hr {
+	border: 0;
+	height: 1px;
+	width: 90%;
+	background: #333;
+	background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/*CONTENT*/
+.section-header {
+	text-align: center;
+	font-family: "Merriweather", Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+/*Article Styles*/
+.article {
+	font-family: "Merriweather Sans", sans-serif;
+	border:1px solid #DFDFDF;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	background-image: url("images/bg-tile.png");
+}
+
+.article h3 {
+	font-family: "Merriweather", serif;
+	font-weight: bold;
+}
+
+/*to remove spacing between venues in Data Science Bootcamp div*/
+.venue {
+	margin-bottom: 0px;
+}
+
+/*Set event button bg-color to fb blue*/
+.btn-fb {
+	background-color: #4468B0;
+}
+
+/*Kanza's Footer CSS*/
+footer{
+	background-image: url(img/pattern3.jpg);
+	background-repeat: repeat;
+	padding:20px;
+	margin-top:20px;
+	/* color:#21618C; */
+	color:#ffffff;
+	text-align: center;
+}
+
+footer a {
+	font-size: 14px;
+    color: #fff;
+	font-weight: bold;
+	padding-bottom:12px;
+	padding-right:12px;
+	text-decoration:none;
+	
+}
+
+.card-body {
+	text-align: center;
+}
+

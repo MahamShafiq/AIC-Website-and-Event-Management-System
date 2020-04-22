@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AIC-Events</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font Awesome CDN Link for Facebook Icon used in footer -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap CSS for everything lol -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<!--Full jQuery.js for scrolling animation -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+	
+	<!-- Popper JS for Bootstrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap JS --> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- Google Fonts Link for Merriweather and Merriweather Sans-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700|Merriweather:700" rel="stylesheet">
+
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="events_styles.css">
+</head>
+
+<body>
+	<!--NAVBAR
+	<!-- In a separate div from the rest of the content, so you can change this without affecting the rest of the page-->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  		<a class="navbar-brand" href="#">
+	    <img src="img/logo.png" width="150" height="50" class="d-inline-block align-top img-fluid">
+  		</a>
+
+		<!--Hamburger Icon for collapsing NavBar on smaller devices-->
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+		</button>
+
+	  	<!-- Everything in this div will collapse when hamburger icon is pressed -->
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	    	<li class="nav-item text-center">
+	    		<a class="nav-link" href="index.html">Home</a>
+	    	</li>
+	    	<!--Current Tab should be highlighted so using active -->
+			<li class="nav-item active text-center">
+		        <a class="nav-link" href="events.html">Events</a>
+		      </li>
+		      <li class="nav-item text-center">
+		      	<a class="nav-link" href="achievements.html">Achievements</a>
+	 	      </li>
+	 	  	  <li class="nav-item text-center">
+		      	<a class="nav-link" href="membership.html">Membership</a>
+	 	      </li>
+	 	      <li class="nav-item text-center">
+		      	<a class="nav-link" href="teams.html">Team</a>
+	 	      </li>
+			  
+	 	      <li class="nav-item text-center">
+		      	<a class="nav-link" href="blog\html\blogs_home.html">Blogs</a>
+	 	      </li>
+	 	      <li class="nav-item text-center">
+	 	      	<a class="nav-link" href="index.html#contact">Contact Us</a>
+	 	      </li>
+		    </ul>
+		  </div>
+	</nav>
+
+	
+	
+	
+	<!-- JUMBOTRON - DIRECTS VIEWERS TO UPCOMING/PAST EVENTS -->
+	<!-- YOU CAN ALSO REMOVE THIS WITHOUT AFFECTING ANYTHING ELSE -->
+	<div class="jumbotron">
+  		<h1 class="display-4">Our Events</h1>
+  		<hr>
+  		<p class="lead">Workshops, Bootcamps, and Everything in Between</p>
+  		<p class="lead">
+			<a class="btn btn-secondary btn-md" href="register.php" role="button">Register in Our Events</a>
+    		<a class="btn btn-secondary btn-md" href="#upcoming-events" role="button">Upcoming Events</a>
+    		<a class="btn btn-secondary btn-md" href="#past-events" role="button">Past Events</a>
+  		</p>
+	</div>
+
+	<!-- BODY CONTAINER -->
+	<div class="container">
+		<!-- YOU CAN REMMOVE UPCOMING EVENT CARDS AND PAST EVENT CARDS
+			WITHOUT AFFECTING THE PAGE'S DESIGN -->
+
+		<!-- IF YOU REMOVE CARDS, CHANGE JUMBOTRON BUTTON HREFS TO 
+			'upcoming-event-heading' and 'past-event-heading'-->
+
+
+		<!--UPCOMING EVENT CARDS -->
+		<div id="upcoming-events" class="mb-4">	
+			<div class="section-header">
+				<h2>Upcoming Events</h2>
+			</div>
+			
+			
+			<!-- for single card-->
+			<div class="row">
+				<div class="col-sm-4 mx-auto"> 
+				<div class="card-deck">
+					<div class="card">
+			    	<img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    	<div class="card-body d-flex flex-column">
+			      	<h5 class="card-title">Python For Data Scientists</h5>
+				      <div class="text-center mt-auto">
+			      		<a href="#python-ds" class="btn btn-secondary btn-sm">Read More</a>
+			      	</div>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">12th July - 13th July 2018</small>
+			    </div>
+			  </div> 
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<!-- PAST EVENT CARDS -->
+		<div id="past-events">	
+			<div class="section-header">
+				<h2>Past Events</h2>
+			</div>
+		</div>
+
+		<div class="card-deck mb-4">
+			  <div class="card">
+			    <img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    <div class="card-body d-flex flex-column">
+			      <h5 class="card-title">AI Mentoring Session</h5>
+			      <div class="text-center mt-auto">
+			      		<a href="#mentoring-session" class="btn btn-secondary btn-sm">Read More</a>
+			      </div>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">12th May 2018</small>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    <div class="card-body d-flex flex-column">
+			      <h5 class="card-title">Seminar on Computer Vision</h5>
+			      <div class="text-center mt-auto">
+			      		<a href="#comp-vis-seminar" class="btn btn-secondary btn-sm">Read More</a>
+			      </div>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">2nd May 2018</small>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    <div class="card-body d-flex flex-column">
+			      <h5 class="card-title">Industrial Visit To Venture Dive</h5>
+			      <div class="text-center mt-auto">
+			      		<a href="#venture-dive" class="btn btn-secondary btn-sm">Read More</a>
+			      </div>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">23rd April 2018</small>
+			    </div>
+			  </div>
+		</div>
+
+		<div class="card-deck mb-4">
+  			  <div class="card">
+			    <img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    <div class="card-body d-flex flex-column">
+			      <h5 class="card-title">AI Meetup #5</h5>
+			      <div class="text-center mt-auto">
+			      		<a href="#meetup-5" class="btn btn-secondary btn-sm">Read More</a>
+			      </div>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">12th April 2018</small>
+			    </div>
+			  </div>	
+
+			  <div class="card">
+			    <img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    <div class="card-body d-flex flex-column">
+			      <h5 class="card-title">Data Science Workshop</h5>
+			       <div class="text-center mt-auto">
+			      		<a href="#ds-workshop" class="btn btn-secondary btn-sm">Read More</a>
+			      </div>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">7th Feb 2018</small>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    <div class="card-body d-flex flex-column">
+			      <h5 class="card-title">AI Meetup #4</h5>
+			      <div class="text-center mt-auto">
+			      		<a href="#meetup-4" class="btn btn-secondary btn-sm">Read More</a>
+			      </div>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">21st Jan 2018</small>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="card-deck mb-4">
+			  <div class="card">
+			    <img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    <div class="card-body d-flex flex-column">
+			      <h5 class="card-title">Data Science Bootcamp</h5>
+			      <div class="text-center mt-auto">
+			      		<a href="#ds-bootcamp" class="btn btn-secondary btn-sm">Read More</a>
+			      </div>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">17th Oct - 9th Nov 2017</small>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    <div class="card-body d-flex flex-column">
+			      <h5 class="card-title">AI Meetup #3</h5>
+				      <div class="text-center mt-auto">
+			      		<a href="#meetup-3" class="btn btn-secondary btn-sm">Read More</a>
+			      </div>
+			    </div>
+
+			    <div class="card-footer">
+			      <small class="text-muted">26th Sept 2017</small>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    <div class="card-body d-flex flex-column">
+			      <h5 class="card-title">AIC Meetup #2</h5>
+			 		<div class="text-center mt-auto">
+			      		<a href="#meetup-2" class="btn btn-secondary btn-sm align-bottom">Read More</a>
+			      </div>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">5th Sept 2017</small>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="card-deck mb-4">
+  				  <div class="card">
+				    <img class="card-img-top img-thumbnail" src="images/logo.jpg">
+				    <div class="card-body d-flex flex-column">
+				      <h5 class="card-title">AI Meetup #1</h5>
+					      <div class="text-center mt-auto">
+				      		<a href="#meetup-1" class="btn btn-secondary btn-sm">Read More</a>
+				      </div>
+				    </div>
+				    <div class="card-footer">
+				      <small class="text-muted">29th Aug 2017</small>
+				    </div>
+				  </div>
+
+		 		<div class="card">
+			    	<img class="card-img-top img-thumbnail" src="images/logo.jpg">
+			    	<div class="card-body d-flex flex-column">
+			      		<h5 class="card-title">AIC Open House</h5>
+			      		<div class="text-center align-bottom">
+			      			<a href="#open-house" class="btn btn-secondary btn-sm">Read More</a>
+			      		</div>
+			    	</div>
+			    	<div class="card-footer">
+			     	<small class="text-muted">15th Aug 2017</small>
+			    	</div>
+			 	 </div>
+			</div>			
+		</div>
+		
+		
+
+		<hr>
+
+		<!-- UPCOMING EVENT DETAILS HEADER-->
+		<div id="upcoming-event-heading">	
+			<div class="section-header">
+				<h2>Upcoming Events</h2>
+			</div>
+		</div>
+		
+		<!-- UPCOMING EVENT DETAILS -->
+		<div id="upcoming-event-heading">
+			
+			<!--PYTHON WORKSHOP -->
+			 <div class="row article m-4" id="python-ds">
+				<div class="article-header col-sm-12">
+					
+				<h3 class="text-primary text-center">Python For Data  Scientists</h3>
+					<p class="text-muted text-center">12th July - 13th July, 2018</p>
+				</div>
+			
+				<div class="col-12 text-center align-self-center">
+					<img src="images/carousel1.jpg" class="img-fluid mx-auto img-thumbnail rounded mb-4">
+				</div>
+			
+				<A NAME="python">
+				<div class="col-12 align-self-center">
+					<p>AI Club is proud to announce its event for the month of July 2018 - Python for Data Science. This workshop is a phenomenal opportunity for anyone interested in jumpstarting their Data Science journey with a comprehensive, hands-on introduction to one of Data Science's most important tools - the Python programming language. As a participant, you will learn how to harness the power of Python and its Pandas & matplotlib modules to visualize, explore, and analyse real world data sets. The workshop will be conducted in a computer lab, where you will be able to immediately apply the skills and techniques you will learn in the complementing lectures.</p>
+					<p>By the end of the workshop, not only will you be a better Python programmer, but will also be well on your way to tackling competitions on <Strong>Kaggle</Strong> - a tried and tested path to a career in Data Science.</p>
+					<div class="btn-container text-center">
+						<a href="https://www.facebook.com/events/178860749496894/" target="_blank" 
+						class="btn btn-primary btn-md btn-fb">Facebook Event</a>
+					</div>
+				</div>
+			</div>	
+	
+	</div>		
+
+		<hr>
+
+		<!-- PAST EVENT DETAILS HEADER-->
+		<div id="past-event-details">	
+			<div class="section-header">
+				<h2>Past Events</h2>
+			</div>
+		</div>
+
+		<!-- PAST EVENT DETAILS -->
+		<div id="past-event-details">
+
+		<!-- AI MENTORING SESSION -->
+			<div class="row article m-4" id="mentoring-session">
+				<div class="article-header col-sm-12">
+					<h3 class="text-primary text-center">AI Mentoring Session</h3>
+					<p class="text-muted text-center">12th May, 2018</p>
+					<p class="text-muted text-center">CIS Lecture Hall, NED</p>
+				</div>
+				<div class="col-sm-12 align-self-center ">
+					<p>One of our aims is to gather young, bright individuals who are interested in AI/Data Science and connect them with experts at the top of their game to produce the crème de la crème of innovators and entrepreneurs of the next generation. To this end, AI Club organized an AI mentoring session on 12th May 2018. For this session we were joined by Dr Mohammad Khurram, associate professor of CIS department, NED and head of RCAI, and Fahad Shahab, developer at NiFT and co-founder of 1Link. They announced the projects that they had, such as dense crowd monitoring, emotions detector, etcetera and invited students to work on what can become their next big start-up. Other than that, they spoke of the future of Artificial Intelligence and data science, inspiring students to take them up as careers. </p>
+				</div>
+				
+				<div class="row text-center align-self-center">
+					<div class="col-md-6 mx-auto align-self-center">
+						<img src="images/ms1.png" class="img-fluid rounded m-2 img-thumbnail">
+					</div>
+					<div class="col-md-6 mx-auto align-self-center">
+						<img src="images/ms2.png" class="img-fluid rounded mr-5 img-thumbnail">
+					</div>
+				</div>
+				
+			</div>
+		
+		
+	<!-- SEMINAR ON CV DETAILS -->
+		<div class="row article m-4" id="comp-vis-seminar">
+				<div class="article-header col-sm-12">
+					<h3 class="text-primary text-center">Seminar on Computer Vision</h3>
+					<p class="text-muted text-center">2nd May, 2018</p>
+					<p class="text-muted text-center">CIS Lecture Hall, NED</p>
+				</div>
+				<div class="col-md-6 text-center align-self-center">
+					<img src="images/pic1.png" class="img-fluid img-thumbnail mx-auto rounded mb-4">
+				</div>
+				<div class="col-md-6 align-self-center">
+					<p>The event kicked off with a speech from our new vice president, Saad Siddiqui. Following that, our guest speakers, Hamza Zafar, data analyst at DigiTegra and Faizan Khan, software engineer at 10Pearls, shared key information on the challenges and applications of image processing. More importantly, they highlighted pressure points of this fairly new technology. A successful Q/A session was conducted at the end where the guest speakers helped clear all queries and doubts of our active and curious participants.
+					</p>
+					<div class="btn-container text-center">
+						<a href="https://www.facebook.com/events/164660287569615/" target="_blank" 
+						class="btn btn-primary btn-md btn-fb">Facebook Event</a>
+					</div>
+				</div>
+			</div>
+
+		<!-- INDUSTRIAL VISIT TO VENTURE DIVE-->
+		<div class="row article m-4" id="venture-dive">
+				<div class="article-header col-sm-12">
+					<h3 class="text-primary text-center">Industrial Visit To Venture Dive</h3>
+					<p class="text-muted text-center">23rd April 2018</p>
+					<p class="text-muted text-center">Venture Dive Conference Hall</p>
+				</div>
+				<div class="col-md-6 align-self-center mb-4">
+					<p>AI Club believes in playing a key role in upskilling the next generation of tech entrepreneurs hence conducted an industrial visit to VentureDive’s state-of-the-art office. The visit provided final year students with an opportunity to gain insights into Software Quality Assurance, Test Automation, and Development. The two-hour session also allowed NED students a glimpse into the culture and professional practices at VentureDive</p>
+				</div>
+				<div class="col-md-6 text-center align-self-center">
+					<img src="images/vd1.png" class="img-fluid mx-auto img-thumbnail rounded mb-4">
+				<p>AI Club with Safi Hasan, HR Executive at VenD and Sir Jaseemuddin </p>
+				</div>
+			</div>
+			
+			
+		
+		
+			<!-- MEETUP NUMBER 5 -->
+			<div class="row article m-4" id="meetup-5">
+				<div class="article-header col-sm-12">
+					<h3 class="text-primary text-center">AI Meetup #5</h3>
+					<p class="text-muted text-center">12th April 2018</p>
+					<p class="text-muted text-center">CIS Lecture Hall, NED</p>
+				</div>
+				<div class="col-12 text-center align-self-center">
+					<img src="images/meet5.png" class="img-fluid mx-auto img-thumbnail rounded mb-4">
+				</div>
+				<div class="col-12 align-self-center mb-4">
+					<p>The technical head, <strong>Ashba Jawed,</strong> general Secretary AIC started the meetup in full energy, explaining about the great revolution of AI. This meetup included two great sessions on ANN(Artificial Neural Networks) & CNNs(Convolutional Neural Networks). The first speaker, <strong>M.Hassaan Anwar,</strong> explained ANNs in an amazing manner and made ANNs look easy to the audience. He described that an ANN is a model based on the structure of biological neural networks. ANN takes data samples rather than entire data sets to arrive at solutions, which saves both time and money.</p>
+					<p>The second speaker, <strong>Shahmir Khan,</strong> explained CNNs, their layers and their examples. He discussed how an image is a matrix of pixel values that can be manipulated by a CNN, whose neurones are arranged in 3 dimensions:<strong> width, height, no. of layers</strong>. A CNN is a sequence of layers, and every layer of a CNN transforms one volume of activations to another through a differentiable function. Three main types of layers to build CNN’s architecture:<strong> Convolutional Layer, Pooling Layer, and Fully-Connected Layer.</strong> The <strong>Convolutional layer</strong> is the core building block of a Convolutional Network that does most of the computational heavy lifting. The <strong>Pooling Layer</strong> does the tuning of the image</p>
+					<div class="btn-container text-center">
+						<a href="https://www.facebook.com/events/195708571031502/" target="_blank" 
+						class="btn btn-primary btn-md btn-fb">Facebook Event</a>
+					</div>
+				</div>
+			</div>
+		
+			<!--DATA SCIENCE WORKSHOP-->
+			<div class="row article m-4" id="ds-workshop">
+				<div class="article-header col-sm-12">
+					<h3 class="text-primary text-center">Data Science Workshop</h3>
+					<p class="text-muted text-center">7th February 2018</p>
+					<p class="text-muted text-center">Civil AV Hall, NEDUET</p>
+				</div>
+				<div class="col-sm-12 text-center">
+					<img src="images/ds-team.jpg" class="img-fluid mx-auto rounded mb-4">
+				</div>
+				<div class="col-sm-12 align-self-center">
+					<p>AI Club hosted its first Data Science Workshop on February 6th, 2018 which turned out to be an inspiring event for Data Scientists and innovators alike. The theme of the event was to guide students on what is data science, its applications, job opportunities in Pakistan and how to get started on Kaggle, which is a world-renowned website that hosts hundreds of top-notch data science competitions. <br>Special thanks to our guest speakers:</p>
+					<p><strong>Khurram Hussain </strong>- CEO, Mojo Solutions who gave an overview of Data Science and its current importance, meanwhile highlighting the courses students should pursue to start their career in Data Sciences.</p>                   
+					<p><strong>Noman Khalid </strong>- CEO, Love for Data explored the subject more rigorously, outlining intricate details.</p>                                        
+					<p>And <strong>Junaid Effendi</strong>, Data Scientist, CIS Alumni: pointing out some of the most common mistakes of novice Data Scientists.</p> 
+					<p>AI Club would also like to thank <strong>Dr. Muhammad Khurram</strong> - Head of Research Centre for Artificial Intelligence for providing AI Club the platform to organize such events. Dr Khurram was our chief guest for the event.</p>
+					<p>Team AI Club is proud to organize such events with data enthusiasts and technocrats in NED and aims to take Artificial Intelligence to a newer level in Pakistan.</p>
+					<p>In the end of the event, AIC gifted Usman Abbas a “Google Home device” for being the first student at NED to complete Coursera’s Deep Learning specialization by Andrew Ng. We are proud to have motivated students like Usman at our club.</p>
+				</div>
+				<div class="row text-center align-self-center">
+					<div class="col-md-6 mx-auto align-self-center">
+						<img src="images/cv1.png" class="img-fluid rounded m-2 img-thumbnail">
+					<p> Dr. Khurram (RCAI head) giving a token of appreciation to CEO of Love for Data -Noman Khalid as a guest speaker</p>
+					</div>
+					<div class="col-md-6 mx-auto align-self-center">
+						<img src="images/cv2.png" class="img-fluid rounded mr-5 img-thumbnail">
+					<p> Dr. Khurram (RCAI head) giving “Google Home device” to Usman Abbas</p>
+					</div>
+				</div>	
+			</div>
+
+			<!-- MEETUP NUMBER 4 -->
+			<div class="row article m-4" id="meetup-4">
+				<div class="article-header col-sm-12">
+					<h3 class="text-primary text-center">AI Meetup #4</h3>
+					<p class="text-muted text-center">21st January 2018</p>
+				</div>
+				<div class="col-lg-6 align-self-center">
+					<img src="images/meetup-4.jpg" class="rounded mx-auto img-fluid mb-2 img-thumbnail">
+				</div>
+				<div class="col-lg-6 align-self-center">
+					<p><strong>Date: </strong>21st January 2018</p>
+					<p><strong>Venue: </strong> High Performance Computational Center, NED </p>
+
+					<p>AI Club had one of its meetups on 1st January 2018, with software houses’ professionals, renowned personalities and AI Club’s faculty. This AI Club meetup aimed to bridge the gap between professionals by bringing them to same pitch and discuss ideas, projects, startups, businesses and different competitions in which the students, the future data scientists, can easily get involved in. Our guest speakers include:</p>
+					<p><strong>Dr. Muhammad Khurram</strong> - Head of Research Center for Artificial Intelligence</p>
+					<p><strong>Khurram Hussain</strong> - CEO, Mojo Solutions &#38; Services MSS LLC</p>
+					<p><strong>Imran Ashraf</strong> - Operations Manager at NIFT</p>
+					<p><strong>Mohammad Nouman</strong> - Director, Oracle CX Cloud &#38; IoT Applications at Ephlux</p>
+					<p><strong>Muhammad Umair</strong> - Assisstant Professor at Bahria University</p>
+					<p><strong>Dr.Najam Akber Anjum</strong> - Assisstant Professor at IBA, Centre for Entrepreneurial Development</p>
+					<p>and several other data enthusiasts along with AI Club’s best faculty and students.</p>
+					<p>These industrialists spoke of their success stories, how they started small and how their dedication, hard work and consistency brought them to where they are now.
+					</p>
+				</div>
+			</div>
+
+			<!--DATA SCIENCE BOOTCAMP -->
+			<div class="row article m-4" id="ds-bootcamp">
+				<div class="col-sm-12 align-self-center text-center">
+					<h3 class="text-primary text-center">Data Science Bootcamp</h3>
+					<p class="text-muted text-center">17th October 2017 - 9th November 2017</p>
+					<p class="text-muted text-center">Venues</p>
+					<p class="venue text-muted text-center">Research Center for Artificial Intelligence, CIS Department, NEDUET</p>
+					<p class="venue text-muted text-center">Computation Lab, CIS Department, NEDUET</p>
+					<p class="venue text-muted text-center">Software Lab #3, Software Engineering Department, NEDUET</p>
+					</p>
+				</div>
+				<div class="col-md-6 align-self-center">
+					<span><strong>Speaker</strong></span>
+					<p>
+						Murk Marvi is a PhD scholar and an expert in the domain of Data Science. She has worked on many real-world projects and has been a great example for many students who have worked with her. In this three-week long boot camp, students were given a sound and amazing walkthrough from simple libraries of Data Science to the depths of mathematical equations that make these great libraries.
+					</p>
+				</div>
+				<div class="col-md-6 align-self-center">
+					<img src="images/ds-bootcamp-1.jpg" class="img-thumbnail img-fluid mx-auto rounded">
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-6 mx-auto align-self-center">
+						<img src="images/ds-summer-1.jpg" class="img-fluid img-thumbnail rounded mx-auto m-2">
+					</div>
+					<div class="col-md-6 col-lg-6 mx-auto align-self-center">
+						<img src="images/lab-1.jpg" class="img-fluid img-thumbnail rounded mx-auto m-2">
+					</div>
+					<div class="mx-auto align-self-center">
+						<img src="images/team-1.jpg" class="img-fluid img-thumbnail rounded mx-auto m-2">
+					</div>
+				</div>	
+			</div>
+
+			<!-- AIC MEETUP NUMBER 3 -->
+			<div class="row article m-4" id="meetup-3">
+				<div class="col-md-6 align-self-center">
+					<h3 class="text-primary text-center">AI Meetup #3</h3>
+					<p class="text-muted text-center">26th September 2017</p>
+					<p class="text-muted text-center">Venue: Artificial Intelligence Lab, CIS, NEDUET</p>
+					<p>Usman Abbas showcased his remarkable work on Kaggle House Price Prediction dataset. He gave a practical demonstration of how Kaggle works.
+					</p>
+					<p>Sabah Karim became the first person from AI Club to complete Machine Learning Course by Prof. Andrew Ng and she shared practical implementation of Logistic Regression which is also helpful for learning Neural Networks easily.</p>
+				</div>
+				<div class="col-md-6 align-self-center text-center">
+					<img src="images/logo.jpg" class="rounded img-fluid img-thumbnail mb-2" style="width:70%">
+				</div>
+			</div>
+
+			<!-- AIC MEETUP NUMBER 2 -->
+			<div class="row article m-4" id="meetup-2">
+				<div class="col-md-6 align-self-center mb-2">
+					<h3 class="text-primary text-center">AI Meetup #2</h3>
+					<p class="text-muted text-center">5th September 2017</p>
+					<p class="text-muted text-center">Venue: Parallel Processing Lab, CIS, NEDUET</p>
+					<p>Anas Ayubi and Usman Abbas shared the knowledge they have gained from online courses of Machine Learning and AI articles/blogs available online.
+					</p>
+				</div>
+				<div class="col-md-6 align-self-center">
+					<img src="images/usman-1.jpg" class="rounded mx-auto img-thumbnail img-fluid">
+				</div>
+			</div>	
+
+			<!--AIC MEETUP NUMBER 1 -->
+			<div class="row article m-4" id="meetup-1">
+				<div class="col-md-6 align-self-center">
+					<img src="images/lab-2.jpg" class="rounded mx-auto img-fluid mb-2 img-thumbnail">
+				</div>
+				<div class="col-md-6 align-self-center">
+					<h3 class="text-primary text-center">AI Meetup #1</h3>
+					<p class="text-muted text-center">29th August 2017</p>
+					<p class="text-muted text-center">Venue: Parallel Processing Lab, CIS, NEDUET</p>
+					The purpose of Meetups are to provide place to students from each other so that students can progress with less difficulty. Following people shared their views in first Meetup held by AIC for NEDians. 
+					</p>
+					<p>Anas Ayubi (President of AIC) shared his knowledge about AI.</p>
+					<p>Usman Abbas – Gave an overview of Machine Learning A-Z (Udemy).</p>
+					<p>Muhammad Awais – Gave an overview of Machine Learning by Prof. Andrew Ng. (Coursera).</p>
+				</div>
+			</div>	
+
+			<!--AIC OPEN HOUSE -->
+			<div class="row article m-4"  id="open-house">
+				<div class="col-sm-12">
+					<h3 class="text-primary text-center">AIC Open House</h3>
+					<p class="text-muted text-center">15th August 2017</p>
+					<p>Artificial intelligence is a growing field and has promising future for those who excels in it. Realizing the vacuum in Pakistan for AI education, Khurram Hussain-NED alumni and Research Center of AI, NED has formed Artificial Intelligence Club with following perks for its members. Haris Solangi – GDG Kolachi – also shared his knowledge about Artificial Intelligence.
+					</p>
+					<p>NED AI Club offers the following benefits to its members</p>
+					<ol>
+						<li>
+							Prizes for people completing the following courses
+							<ul>
+								<li>Machine Learning by Prof Andrew Ng (From Coursera)</li>
+								<li>Machine Learning A - Z (From Udemy)</li>
+							</ul>
+						</li>
+						<li>Workshops for students to increase their knowledge in AI.</li>
+						<li>AI meetups for sharing of knowledge among students.</li>
+						<li>Internships for students in companies working in AI domain.</li>
+					</ol>
+				</div>
+
+				<div class="col-md-6 align-self-center">
+					<img src="images/haris-solangi.jpg" class="img-fluid img-thumbnail mx-auto m-2">
+				</div>
+				<div class="col-md-6 align-self-center">
+					<img src="images/open-house.png" class="img-fluid img-thumbnail mx-auto m-2">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- KANZA'S FOOTER HTML -->
+	<footer id="footer" class="bg-secondary">
+      <p>
+      	<a href="https://www.facebook.com/aiclubned/">
+      		<i class="fa fa-facebook-square" aria-hidden="true" style="font-size:24px"></i>
+      	</a>	
+      Artificial Intelligence Club, Copyright &copy; 2018</p>
+    </footer>
+  <script>
+
+  	//Alternative scrolling function from https://stackoverflow.com/a/37297595
+  	//Scroll animation only applies for targets on the same page
+  	//No scroll animation for targets on external links - simply jumps to the 
+  	//contact div on the index.html like a normal href
+  	//In both cases, redirects to the right target
+  	$(function() {
+  		//select all hrefs that don't redirect to null link i.e. that don't have href = '#'
+  		$('a[href*="#"]:not([href="#"])').click(function() {
+  		
+  		//only apply animation code if href is on the same page
+  		//treat a as normal link otherwise
+    	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+    		&& location.hostname == this.hostname) {
+			//select target's hash property i.e. the id
+  			var target = $(this.hash);
+  			//If target.length not 0 i.e. target.length returns boolean 1
+  			//target variable remains unchanged
+  			//otherwise do something I don't understand why am I this stupid lol
+  			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  		
+  			//if target not redirecting to null link 
+  			if (target.length) {
+    			$('html, body').animate({
+      				scrollTop: target.offset().top - 100	//100px offset for events.html
+    				}, 650, 'swing');
+    		return false;	//i have no clue lmao
+  			}
+    	}
+  });
+});
+  </script>
+</body>
+</html>
